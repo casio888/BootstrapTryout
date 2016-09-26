@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="ISO-8859-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tabellenchaos</title>
+	<!-- Lädt das bootstrap css Stylesheet-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<h1>Verschiedene Arten von Tabellen</h1>
+	<!-- !!! Ich kann Hintergründe mit dem Styletag setzten. Aber bootstrap hat auch einige Klassen wie 'bg-warning' oder
+	'bg-info' die solche änderungen enthalten. Was ist "schöner": Neues div innen mit der bootstrap-Klasse oder ein style?-->
+	<!-- !!! Kann ich die Klassen im Bootstrap css erweitern um die Elemente die ich haben möchte? -->
+	<div class="row" >
+		<div class="col-md-6">
+		<!-- Das "Table-responsive"-Div scheint sinnvoll zu sein. packt man das immer um tabellen drum? -->
+			<div class="table-responsive">
+			<table class="table">
+				<thead>
+					<tr>
+					<td>Buchreihe</td>
+					<td>Meinung</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Percy Jackson</td>
+						<td>Besser als die Filme. Interessante Umsetzung der Götter</td>
+					</tr>
+					<tr>
+						<td>Die Legende von Askir</td>
+						<td>Spannende Reise, vielfältige Rassen, mittelviel Politik. Mitreißend aber leicht vorhersehbar.</td>
+					</tr>
+					<tr>
+						<td>Arthemis Foul</td>
+						<td>Kinderbuchähnliche Geschichten über Elfen und ein superschlaues Kind. Fand ich als Kind witzig jetzt ist es eher langweilig.</td>
+					</tr>
+					<tr>
+						<td>A Song of Ice and Fire</td>
+						<td>Abgebrochen weil es mir zu viele Handlungsstränge wurden und ich die Namen vergessen habe.</td>
+					</tr>
+					<tr>
+						<td>Bücher von Walther Möers</td>
+						<td>Alle ziemlich witzig und kreativ. Fantastische Geschichten. Meine Empfehlung: Die 13 1/2 Leben des Kaptain Blaubär ;)</td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+		</div>
+		
+		<!-- !!! also irgendwie sollte die wie die erste Tabelle aufgebaut sein, aber die Paddings stimmen alle nicht.-->
+		<div class="col-md-6">
+			<div class="table-responsive">
+			<table class="table-hover">
+				<thead>
+					<tr>
+					<td>Beshäftigung</td>
+					<td>Interesse</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Essen</td>
+						<td>8</td>
+					</tr>
+					<tr>
+						<td>Computerspiele</td>
+						<td>7-9</td>
+					</tr>
+					<tr>
+						<td>Lesen</td>
+						<td>5-10</td>
+					</tr>
+					<tr>
+						<td>Volleyball</td>
+						<td>8</td>
+					</tr>
+					<tr>
+						<td>Geschirrspüler ausräumen</td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td>Schlafen</td>
+						<td>10</td>
+					</tr>
+					<tr>
+						<td>Programmieren</td>
+						<td>1-10</td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="utf-8"> <!-- kann kein ß,ä,ö,ü -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Bootstrap Gridtests</title>
+	<!-- Lädt das bootstrap css Stylesheet-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<!-- 'col-xs' bleibt immer nebeneinander-->
+<!-- andere 'col' rücken bei verschiedener minimalbreite untereinander -->
+<!-- alle spaltentypen verlängern sich nach unten anstatt eines overflows-->
+<!-- '<p>' ändert Eigenschaften der Spalte. z.B. Höhe-->
+	<h3>Spalten mit Bootstrap <small>(Handy)</small></h3>
+	<div class="row">
+		<div class="col-xs-4" style="background-color:#ddd; text-align:center;"> Phones Collumn 1 with much text</div>
+		<div class="col-xs-4" style="background-color:#ccc; text-align:center;"> Phones Collumn 2 with very much text</div>
+		<div class="col-xs-4" style="background-color:#ddd; text-align:center;">
+			<blockquote>
+			<p>Phones Collumn 3 less text than usual but more than the rest </p>
+			<footer> Michael Müller</footer>
+			</blockquote>
+		</div>
+	</div>
+	<h3>Spalten mit Bootstrap <small>(Tablet)</small></h3>
+	<div class="row">
+		<div class="col-sm-4"><p style="background-color:#ddd; text-align:center;"> Tablet Collumn 1 </p></div>
+		<div class="col-sm-4"><p style="background-color:#ddd; text-align:center;"> Tablet Collumn 2 </p></div>
+		<div class="col-sm-4"><p style="background-color:#ddd; text-align:center;"> Tablet Collumn 3 </p></div>
+	</div>
+	<h3>Spalten mit Bootstrap <small>(Desktp-<abbr title="Personal Computer">PC</abbr>)</small></h3>
+	<div class="row">
+		<div class="col-md-4" style="background-color:#ddd; text-align:center;"> PC Collumn 1 </div>
+		<div class="col-md-7" style="background-color:#ccc; text-align:center;"><p> PC Collumn 2 </p></div>
+		<div class="col-md-4" ><p style="background-color:#ddd; text-align:center;"> PC Collumn 3 </p></div>
+	</div>
+	<h3>Spalten mit Bootstrap <small>(Großbildschirm ä|ö|ü)</small></h3>
+	<div class="row">
+		<div class="col-lg-4" style="background-color:#ddd; text-align:center;"> PlasmaTV Collumn 1 </div>
+		<div class="col-lg-1" style="background-color:#ccc; text-align:center;"> PlasmaTV Collumn 2 with very much text. you wont believe how much text fits in here!</div>
+		<div class="col-lg-3" style="background-color:#ddd; text-align:center;"> PlasmaTV Collumn 3 </div>
+	</div>
+	<br />
+	<h1>Folgender <mark>wichtiger</mark> Text</h1>
+</body>
+</html>

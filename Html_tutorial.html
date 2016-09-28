@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="ISO-885-9">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML for beginners</title>
+	<!-- Lädt das bootstrap css Stylesheet-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<div class="container">
+	<div class="jumbotron">
+		<h1 style="text-align:center">HTML for beginners</h1>
+		<p>Der unkomplizierte Kurs für Einsteiger und Neulinge (wie mich)</p>
+	</div>
+	
+	<!-- sieht so scheiße aus. also keine 2 listen ineinander für weiter/zurück/seitenzahlen 
+	<ul class="pager">
+		<li class="previous disabled"><a href="#">Zurück</a></li>
+		<li>
+			<ul class="pagination" style="margin:0px">
+				<li class="active"><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">2</a></li>
+			</ul>
+		</li>
+		<li class="next"><a href="#">Weiter</a></li>
+	</ul>
+	-->
+	<!-- !!! das scheint so zu gehen, sieht aber bescheuert aus wenn man es ganz schmal macht.
+	Hast du eine Idee wie man das Problem umgehen kann?-->
+	<div class="row">
+		<div class="col-xs-1">
+			<ul class="pager" style="padding:0px"><li class="previous"><a href="#">Zurück</a></li>
+		</div>
+		<div class="col-xs-10" style="text-align:center">
+			<ul class="pagination" style="padding:0px">
+				<li class="active"><a href="#">1</a></li>
+				<li class="disabled"><a href="#">...</a></li>
+				<li><a href="#">3</a></li>
+			</ul>
+		</div>
+		<div class="col-xs-1">
+			<ul class="pager" style="padding:0px"><li class="next"><a href="#">Weiter</a></li>
+		</div>
+	</div>
+	
+	</div>
+</body>
+</html>
